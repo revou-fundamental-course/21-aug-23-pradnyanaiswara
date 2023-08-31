@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Example</title>
+<title>Bootcamper</title>
 <head>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -8,13 +8,13 @@
     <div class="flex-container">
       <div class="box" id="logo">
         <a href=""
-          ><img src="img/revou.png" width="60px" height="60px" alt="" style="border-radius: 50%"
+          ><img src="img/logo.png" width="60px" height="60px" alt="" style="border-radius: 50%"
         /></a>
       </div>
       <div class="box"><a href="">Home</a></div>
-      <div class="box"><a href="">Our Profile</a></div>
+      <div class="box"><a href="profile.html">Our Profile</a></div>
       <div class="box"><a href="">Achievements</a></div>
-      <div class="box"><a href="">Message Us</a></div>
+      <div class="box"><a href="#redirectmsg">Message Us</a></div>
     </div>
   </div>
 
@@ -42,10 +42,42 @@
     </div>
   </div>
 
-  <div class="form">
+  <div class="form" id="redirectmsg">
     <h1>Message Us</h1>
-    <div class="flex-container">
-
+    <div class="flex-container" id="flex-form">
+      <div class="formbox" id="isian">
+        <form action="">
+          <div>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama">
+          </div>
+          <br>
+          <div>
+            <label for="lahir">Tanggal Lahir</label>
+            <input type="date" id="lahir" name="lahir">
+          </div>
+          <br>
+          <div>
+            <label for="gender">Jenis Kelamin</label>
+            <tr>
+              <td><input type="radio" name="gender" value="Pria">Pria</td>
+              <td><input type="radio" name="gender" value="Wanita">Wanita</td>
+          </tr>
+          </div>
+          <br>
+          <div>
+            <label for="pesan" style="vertical-align: top;">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5"></textarea>
+          </div>
+          <br>
+          <div>
+            <input type="submit" id="submitbutton">
+          </div>
+        </form>
+      </div>
+      <div class="formbox">
+        
+      </div>
     </div>
   </div>
 </body>
