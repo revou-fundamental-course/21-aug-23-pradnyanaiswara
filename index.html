@@ -46,19 +46,19 @@
     <h1>Message Us</h1>
     <div class="flex-container" id="flex-form">
       <div class="formbox" id="isian">
-        <form action="">
+        <div>
           <div>
-            <label for="nama">Nama</label>
-            <input type="text" id="nama" name="nama">
+            <label for="nama">Name</label>
+            <input type="text" name="nama" required>
           </div>
           <br>
           <div>
-            <label for="lahir">Tanggal Lahir</label>
-            <input type="date" id="lahir" name="lahir">
+            <label for="lahir">Birthdate</label>
+            <input type="date" name="lahir" required>
           </div>
           <br>
           <div>
-            <label for="gender">Jenis Kelamin</label>
+            <label for="gender">Gender</label>
             <tr>
               <td><input type="radio" name="gender" value="Pria">Pria</td>
               <td><input type="radio" name="gender" value="Wanita">Wanita</td>
@@ -66,18 +66,34 @@
           </div>
           <br>
           <div>
-            <label for="pesan" style="vertical-align: top;">Pesan</label>
-            <textarea id="pesan" name="pesan" rows="5"></textarea>
+            <label for="pesan" style="vertical-align: top;">Message</label>
+            <textarea name="pesan" rows="5" required></textarea>
           </div>
           <br>
           <div>
-            <input type="submit" id="submitbutton">
+            <button id="submitbutton">Submit</button>
           </div>
-        </form>
+        </div>
       </div>
-      <div class="formbox">
-        
+      <div class="formbox" id="resultinput">
+        <div>
+          <div> <b>Your Data</b></div>
+          <div>
+            <p id="hasilnama"></p>
+          </div>
+          <div>
+            <p id="hasillahir"></p>
+          </div>
+          <div>
+            <p id="hasilgender"></p>
+          </div>
+          <div>
+            <p id="hasilpesan"></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
+
+<script src="js/script.js"></script> 

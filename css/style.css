@@ -106,6 +106,10 @@
     border-style: none;
 }
 
+#resultinput {
+    background-color: yellow;
+}
+
 .formbox {
     display: flex;
     align-items: center;
